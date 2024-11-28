@@ -14,7 +14,8 @@
     ],
     "env": [
         {
-            "DATABASE_URL": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMzNkMmFjOWItNDZiZC00ZmM0LWFmNzUtYmM5MWJjZjEwMjZiIiwidGVuYW50X2lkIjoiOWI0YWY3MDVlOTQ3YmY1M2JhNmIwNWM3NmY5OGQ1M2VkMDZlMWUyYTQ2ZjY2OTJlMWYzODNmMGQ4ZGM3MTdiOCIsImludGVybmFsX3NlY3JldCI6ImVjZjVjMzI1LWZmMjYtNDMxMy1iYjFjLTYzMjIzOWU5MzQ3MSJ9.InglaL3GAN8Y6_qS7edkvcFSjmlif5022R8q004sR48"
+            "DATABASE_URL": "prisma+postgres://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMzNkMmFjOWItNDZiZC00ZmM0LWFmNzUtYmM5MWJjZjEwMjZiIiwidGVuYW50X2lkIjoiOWI0YWY3MDVlOTQ3YmY1M2JhNmIwNWM3NmY5OGQ1M2VkMDZlMWUyYTQ2ZjY2OTJlMWYzODNmMGQ4ZGM3MTdiOCIsImludGVybmFsX3NlY3JldCI6ImVjZjVjMzI1LWZmMjYtNDMxMy1iYjFjLTYzMjIzOWU5MzQ3MSJ9.InglaL3GAN8Y6_qS7edkvcFSjmlif5022R8q004sR48",
+            "ANOTHER_ENV_VAR": "some-value"
         }
     ]
 }
