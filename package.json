@@ -1,5 +1,5 @@
 {
-  "name": "hello-prisma",
+  "name": "server-sosmed",
   "license": "MIT",
   "scripts": {
     "queries": "ts-node ./src/queries.ts",

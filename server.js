@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const userRoutes = require('./routes/userRoutes'); // Pastikan path sesuai dengan lokasi file routes
 const dotenv = require('dotenv');
 const cors = require('cors')
@@ -11,8 +10,8 @@ const PORT = process.env.PORT || 3000;
 
 
 // Middleware
-app.use(bodyParser.json()); // Untuk mem-parsing JSON dari request body
 app.use(cors())
+app.use(express.json());
 
 // Menghubungkan routes
 app.use('/api/auth', userRoutes);
