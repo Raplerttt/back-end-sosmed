@@ -13,14 +13,22 @@ model User {
   name    String?
   username String  @unique
   password String
-  posts   Post[]
+  order   Order[]
 }
 
-model Post {
-  id        Int     @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
-  authorId  Int?
+model Order {
+  id            Int      @id @default(autoincrement())
+  clientName    String
+  date          DateTime
+  service       String
+  orderType     String
+  details       String
+  narrativeFile String?  // Optional, link file
+  mediaFile     String?  // Optional, Google Drive URL
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+
+  userId        Int       // Foreign key untuk relasi ke User
+  user          User      @relation(fields: [userId], references: [id])  // Relasi one-to-many
 }

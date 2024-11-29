@@ -6,6 +6,7 @@ const errorHandler = require('./middleware/errorHandler');
 const cors = require('cors');
 const logger = require('./middleware/logger');
 const rateLimiter = require('./middleware/rateLimiter');
+const orderRoutes = require('./routes/orderRoutes')
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ app.use(rateLimiter);
 
 // Menghubungkan routes
 app.use('/api/user', userRoutes);
+app.use('/api/order', orderRoutes);
 app.use(errorHandler);
 
 // Endpoint Root
